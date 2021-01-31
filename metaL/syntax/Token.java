@@ -1,4 +1,4 @@
-package metaL;
+package metaL.syntax;
 
 public class Token extends Syntax {
 

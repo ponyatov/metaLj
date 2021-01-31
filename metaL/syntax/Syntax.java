@@ -1,4 +1,6 @@
-package metaL;
+package metaL.syntax;
+
+import metaL.core.meta.Meta;
 
 public class Syntax extends Meta {
 

@@ -1,4 +1,4 @@
-package metaL;
+package metaL.core.meta;
 
 public class Module extends Meta {
 

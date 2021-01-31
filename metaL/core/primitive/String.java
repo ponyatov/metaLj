@@ -1,4 +1,4 @@
-package metaL;
+package metaL.core.primitive;
 
 public class String extends Primitive {
 
