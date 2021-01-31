@@ -62,6 +62,12 @@
             "command":        "make web",
             "problemMatcher": []
         },
+        {
+            "label":          "doc: doxygen",
+            "type":           "shell",
+            "command":        "make doxy",
+            "problemMatcher": []
+        },
         /* / <section:tasks> */
     ]
 }

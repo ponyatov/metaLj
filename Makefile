@@ -54,6 +54,11 @@ cfr: tmp/cfr
 tmp/cfr: $(C)
 	$(JAVA) -jar $(CFR) --outputdir $@ $? && touch $@
 # / <section:all>
+# \ <section:doc>
+.PHONY: doxy
+doxy:
+	doxygen -g doxy.gen
+# / <section:doc>
 # \ <section:gz>
 .PHONY: gz
 gz: $(GJF) $(CFR)
