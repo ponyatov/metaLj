@@ -57,7 +57,7 @@ tmp/cfr: $(C)
 # \ <section:doc>
 .PHONY: doxy
 doxy:
-	doxygen -g doxy.gen
+	doxygen doxy.gen
 # / <section:doc>
 # \ <section:gz>
 .PHONY: gz
