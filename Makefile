@@ -28,6 +28,12 @@ JAD          = procyon
 # \ <section:obj>
 J += metaL/metaL.java
 C += bin/metaL/metaL.class
+
+J += metaL/Object.java
+C += bin/metaL/Object.class
+
+J += metaL/Meta.java metaL/App.java
+C += bin/metaL/Meta.class bin/metaL/App.class
 # / <section:obj>
 # \ <section:all>
 

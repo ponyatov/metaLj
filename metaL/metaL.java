@@ -1,6 +1,6 @@
 package metaL;
 
-public class metaL {
+public class metaL extends App {
   public static void main(String[] args) {
     System.out.print("args:");
     for (String arg : args) {
