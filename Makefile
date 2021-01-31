@@ -21,6 +21,7 @@ WGET         = wget -c
 CURL         = curl
 JAVAC        = $(JAVA_HOME)/bin/javac -d $(BIN)
 JAVA         = $(JAVA_HOME)/bin/java -cp $(TMP) -cp $(BIN)
+JSH          = $(JAVA_HOME)/bin/jshell
 GJF          = tmp/google-java-format-$(GJF_VER)-all-deps.jar
 CFR          = tmp/cfr-$(CFR_VER).jar
 JAD          = procyon
@@ -38,6 +39,10 @@ all: $(C)
 
 bin/%.class: %.java
 	$(JAVAC) $< && touch $@
+
+.PHONY: repl
+repl:
+	$(JSH)
 
 .PHONY: format
 format: tmp/format
