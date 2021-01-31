@@ -33,7 +33,8 @@ C  = $(shell echo $(J) | sed 's/metaL\//bin\/metaL\//g' | sed 's/.java/.class/g'
 
 .PHONY: all
 all: $(C)
-	$(JAVA) $(MODULE).$(MODULE) $(J)
+	$(JAVA) $(MODULE).$(MODULE)
+#	$(J)
 
 bin/%.class: %.java
 	$(JAVAC) $< && touch $@
