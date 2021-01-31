@@ -1,0 +1,67 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        /* \ <section:tasks> */
+        {
+            "label":          "module: install",
+            "type":           "shell",
+            "command":        "make install",
+            "problemMatcher": []
+        },
+        {
+            "label":          "module: update",
+            "type":           "shell",
+            "command":        "make update",
+            "problemMatcher": []
+        },
+        {
+            "label":          "git: main",
+            "type":           "shell",
+            "command":        "make main",
+            "problemMatcher": []
+        },
+        {
+            "label":          "git: shadow",
+            "type":           "shell",
+            "command":        "make shadow",
+            "problemMatcher": []
+        },
+        {
+            "label":          "make: test",
+            "type":           "shell",
+            "command":        "make test",
+            "problemMatcher": []
+        },
+        {
+            "label":          "make: format",
+            "type":           "shell",
+            "command":        "make format",
+            "problemMatcher": []
+        },
+        {
+            "label":          "make: cfr",
+            "type":           "shell",
+            "command":        "make cfr",
+            "problemMatcher": []
+        },
+        {
+            "label":          "make: repl",
+            "type":           "shell",
+            "command":        "make repl",
+            "problemMatcher": []
+        },
+        {
+            "label":          "make: gui",
+            "type":           "shell",
+            "command":        "make gui",
+            "problemMatcher": []
+        },
+        {
+            "label":          "make: web",
+            "type":           "shell",
+            "command":        "make web",
+            "problemMatcher": []
+        },
+        /* / <section:tasks> */
+    ]
+}

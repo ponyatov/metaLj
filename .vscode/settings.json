@@ -1,0 +1,46 @@
+/* \ <section:top> */
+{
+/* / <section:top> */
+/* \ <section:mid> */
+/* \ <section:multi> */
+"multiCommand.commands": [
+    {
+        "command": "multiCommand.f11",
+        "sequence": [
+            "workbench.action.files.saveAll",
+            {"command": "workbench.action.terminal.sendSequence","args": {"text":
+                "\u000D clear ; make format \u000D"
+            }}]
+    },
+    {
+        "command": "multiCommand.f12",
+        "sequence": [
+            "workbench.action.files.saveAll",
+            {"command": "workbench.action.terminal.sendSequence","args": {"text":
+                "\u000D clear ; make \u000D"
+            }}]
+    },
+],
+/* / <section:multi> */
+"files.watcherExclude": {
+    /* \ <section:watcher> */
+        // "**/bin/**": true,
+    /* / <section:watcher> */
+},
+"files.exclude": {
+    /* \ <section:exclude> */
+    /* / <section:exclude> */
+},
+"files.associations": {
+    /* \ <section:assoc> */
+    "requirements.*": "config",
+    /* / <section:assoc> */
+},
+"editor.tabSize": 4,
+"workbench.tree.indent": "32",
+// "browser-preview.startUrl": "http://127.0.0.1:23193"
+"browser-preview.startUrl": "127.0.0.1:12345/"
+/* / <section:mid> */
+/* \ <section:bot> */
+}
+/* / <section:bot> */

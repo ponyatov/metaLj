@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "stkb.rewrap",
+        "auchenberg.vscode-browser-preview",
+        // "tabnine.tabnine-vscode",
+        // "vscjava.vscode-java-pack",
+        "redhat.java",
+        "redhat.vscode-xml",
+        // "dgileadi.java-decompiler",
+    ]
+}
