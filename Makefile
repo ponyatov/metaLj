@@ -26,14 +26,8 @@ CFR          = tmp/cfr-$(CFR_VER).jar
 JAD          = procyon
 # / <section:tool>
 # \ <section:obj>
-J += metaL/metaL.java
-C += bin/metaL/metaL.class
-
-J += metaL/Object.java
-C += bin/metaL/Object.class
-
-J += metaL/Meta.java metaL/App.java
-C += bin/metaL/Meta.class bin/metaL/App.class
+J  = $(shell find metaL -type f )
+C  = $(shell echo $(J) | sed 's/metaL\//bin\/metaL\//g' | sed 's/.java/.class/g')
 # / <section:obj>
 # \ <section:all>
 
