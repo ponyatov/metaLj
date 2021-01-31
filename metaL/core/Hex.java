@@ -1,4 +1,4 @@
-package metaL;
+package metaL.core;
 
 public class Hex extends Integer {
 

@@ -1,6 +1,6 @@
-package metaL.core;
+package metaL.core.prim;
 
-public class Primitive extends Object {
+public class Primitive extends metaL.core.Object {
 
   public Primitive(java.lang.String T) {
     super(T);
