@@ -8,4 +8,8 @@ public class Number extends Primitive {
     super("number");
     value = V;
   }
+
+  public java.lang.String val() {
+    return Double.toString(value);
+  }
 }

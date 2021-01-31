@@ -33,7 +33,16 @@ public class Object implements IDump, ICombine, ICompile {
   }
 
   public java.lang.String dump(int depth, java.lang.String prefix) {
+    //
     java.lang.String ret = pad(depth) + head(prefix);
+    //
+    int idx = 0;
+    java.lang.String pfx;
+    for (Object j : nest) {
+      pfx = String.format("%s : ", idx++);
+      ret += j.dump(depth + 1, pfx);
+    }
+    //
     return ret;
   }
 
@@ -42,13 +51,21 @@ public class Object implements IDump, ICombine, ICompile {
   }
 
   public java.lang.String head(java.lang.String prefix) {
-    return prefix + "<" + type + ":" + value + ">";
+    return prefix + "<" + tag() + ":" + val() + ">";
+  }
+
+  public java.lang.String tag() {
+    return type;
+  }
+
+  public java.lang.String val() {
+    return value;
   }
 
   //////////////////////////////////////////////////////// ICombine
 
   public Object push(Object that) {
-    nest.addElement(that);
+    nest.add(that);
     return this;
   }
 }

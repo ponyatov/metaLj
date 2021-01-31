@@ -8,4 +8,8 @@ public interface IDump {
   public java.lang.String pad(int depth);
 
   public java.lang.String head(java.lang.String prefix);
+
+  public java.lang.String tag();
+
+  public java.lang.String val();
 }
