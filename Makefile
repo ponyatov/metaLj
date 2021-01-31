@@ -57,7 +57,7 @@ tmp/cfr: $(C)
 # \ <section:doc>
 .PHONY: doxy
 doxy:
-	doxygen doxy.gen
+	rm -rf docs ; doxygen doxy.gen 1>/dev/null
 # / <section:doc>
 # \ <section:gz>
 .PHONY: gz
