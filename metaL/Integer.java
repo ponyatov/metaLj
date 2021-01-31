@@ -1,10 +1,10 @@
 package metaL;
 
-public class Int extends Primitive {
+public class Integer extends Primitive {
 
   long value;
 
-  public Int(int V) {
+  public Integer(long V) {
     super("int");
     value = V;
   }
