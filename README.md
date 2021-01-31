@@ -5,4 +5,4 @@
 
 github: https://github.com/ponyatov/metaLj
 
-manual: https://ponyatov.github.io/metaLj/
+manual: https://ponyatov.github.io/metaLj/index.html

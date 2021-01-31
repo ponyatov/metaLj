@@ -29,6 +29,7 @@ JAD          = procyon
 # \ <section:obj>
 J  = $(shell find metaL -type f )
 C  = $(shell echo $(J) | sed 's/metaL\//bin\/metaL\//g' | sed 's/.java/.class/g')
+S  = $(J)
 # / <section:obj>
 # \ <section:all>
 
@@ -79,3 +80,23 @@ Linux_install Linux_update:
 	sudo apt update
 	sudo apt install -u `cat apt.txt`
 # / <section:install>
+# \ <section:merge>
+MERGE  = Makefile README.md apt.txt .gitignore .vscode $(S) doxy.gen
+.PHONY: main
+main:
+	git push -v
+	git checkout $@
+	git pull -v
+	git checkout shadow -- $(MERGE)
+	$(MAKE) doxy
+.PHONY: shadow
+shadow:
+	git pull -v
+	git checkout $@
+	git pull -v
+.PHONY: release
+release:
+	git tag $(NOW)-$(REL)
+	git push -v && git push -v --tags
+	$(MAKE) shadow
+# / <section:merge>
