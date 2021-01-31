@@ -1,4 +1,4 @@
-package metaL.core;
+package metaL;
 
 public interface IDump {
   public java.lang.String toString();

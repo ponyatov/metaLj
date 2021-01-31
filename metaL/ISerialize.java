@@ -1,4 +1,4 @@
-package metaL.core;
+package metaL;
 
 public interface ISerialize {
   public int xxhash32();

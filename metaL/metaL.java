@@ -3,6 +3,9 @@ package metaL;
 import metaL.core.meta.App;
 import metaL.gui.Frame;
 
+import metaL.core.primitive.Integer;
+import metaL.core.primitive.Number;
+
 public class metaL extends App {
 
   public metaL() {
@@ -20,6 +23,7 @@ public class metaL extends App {
     App app = new App("metaL");
     Frame main = new Frame(app);
     app.push(main);
+    app.push(Integer(1));
     System.out.println(app);
   }
 }
