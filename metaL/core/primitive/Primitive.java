@@ -1,4 +1,4 @@
-package metaL.core.prim;
+package metaL.core.primitive;
 
 public class Primitive extends metaL.core.Object {
 

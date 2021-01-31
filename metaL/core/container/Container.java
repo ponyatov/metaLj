@@ -1,6 +1,6 @@
-package metaL.core;
+package metaL.core.container;
 
-public class Container extends Object {
+public class Container extends metaL.core.Object {
 
   public Container(java.lang.String V) {
     super("container", V == null ? "" : V);

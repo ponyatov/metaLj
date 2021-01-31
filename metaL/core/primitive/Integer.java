@@ -1,4 +1,4 @@
-package metaL.core;
+package metaL.core.primitive;
 
 public class Integer extends Primitive {
 
