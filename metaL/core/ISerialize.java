@@ -1,7 +1,9 @@
 package metaL.core;
 
 public interface ISerialize {
-  public long xxhash();
+  public int xxhash32();
+
+  public long xxhash64();
 
   public java.lang.String json(int depth);
 
