@@ -1,4 +1,4 @@
-package metaL;
+package metaL.core;
 
 import java.util.Map;
 
