@@ -10,4 +10,6 @@ public interface ISerialize {
   public java.lang.String xml(int depth);
 
   public java.lang.String bert(int depth);
+
+  public java.lang.String sql(int depth);
 }
