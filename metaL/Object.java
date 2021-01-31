@@ -3,14 +3,14 @@ package metaL;
 import java.util.Map;
 
 public class Object {
-  public String type, value;
-  public Map<String, Object> slot;
+  public java.lang.String type, value;
+  public Map<java.lang.String, Object> slot;
 
-  public Object(String T) {
+  public Object(java.lang.String T) {
     type = T;
   }
 
-  public Object(String T, String V) {
+  public Object(java.lang.String T, java.lang.String V) {
     this(T);
     value = V;
   }

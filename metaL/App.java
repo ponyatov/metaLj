@@ -2,7 +2,7 @@ package metaL;
 
 public class App extends Meta {
 
-  public App(String V) {
+  public App(java.lang.String V) {
     super("app", V);
     // TODO Auto-generated constructor stub
   }

@@ -2,8 +2,7 @@ package metaL;
 
 public class Meta extends Object {
 
-  public Meta(String T, String V) {
+  public Meta(java.lang.String T, java.lang.String V) {
     super(T, V);
-    // TODO Auto-generated constructor stub
   }
 }
