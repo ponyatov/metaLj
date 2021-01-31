@@ -19,6 +19,7 @@ public class metaL extends App {
     //
     App app = new App("metaL");
     Frame main = new Frame(app);
+    app.push(main);
     System.out.println(app);
   }
 }
